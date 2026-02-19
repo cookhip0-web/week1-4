@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Growth – Worm to Butterfly</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="growth-map">
+    <header class="top-hero" id="top">
+      <div class="top-inner">
+        <div class="logo">growth</div>
+        <nav class="main-nav">
+       
+        </nav>
+      </div>
+
+      <section class="hero-content">
+        <div class="hero-buttons">
+          <a href="#stage-baby-worm" class="btn btn-primary">Start from baby worm</a>
+          <a href="#stage-butterfly" class="btn btn-secondary">Skip to butterfly</a>
+        </div>
+      </section>
+    </header>
+
+    <section class="panel panel-yellow stage-baby-worm" id="stage-baby-worm">
+      <header class="stage-hero">
+        <h2 class="stage-label">Stage 1 · Baby Worm</h2>
+        <p class="stage-intro">
+          The smallest version of growth, barely formed and close to the ground.
+        </p>
+        <div class="stage-buttons">
+          <a href="#stage-worm" class="btn btn-secondary">Next stage</a>
+        </div>
+      </header>
+
+      <div class="stage-center">
+        <div class="worm-visual">
+          <div class="word squirm">squirm</div>
+          <img src="images/worm1.png" alt="baby worm" class="stage-img" />
+          <div class="word wriggle">wriggle</div>
+        </div>
+
+        <p class="stage-description">
+          The very first movements of the dream, small and close to the soil.
+        </p>
+
+        <button class="inner-dream-toggle" data-stage="1">
+          open inner dream
+        </button>
+      </div>
+    </section>
+
+
+    <section class="panel panel-yellow stage-worm" id="stage-worm">
+      <header class="stage-hero">
+        <h2 class="stage-label">Stage 2 · Worm</h2>
+        <p class="stage-intro">
+          Noisy, chaotic movement at the beginning of growth.
+        </p>
+        <div class="stage-buttons">
+          <a href="#stage-baby-worm" class="btn btn-secondary">Back</a>
+          <a href="#stage-pre-butterfly" class="btn btn-secondary">Next stage</a>
+        </div>
+      </header>
+
+      <div class="stage-center">
+        <div class="worm-visual">
+          <div class="word squirm">squirm</div>
+          <img src="images/worm.png" alt="worm" class="stage-img" />
+          <div class="word wriggle">wriggle</div>
+          <div class="word grow">Growing</div>
+        </div>
+
+        <p class="stage-description">
+          Early dreams twist and tangle, unsure of where they are going.
+        </p>
+
+        <div class="branch-buttons">
+          <button class="branch-btn" data-branch="sleep">Keep sleeping</button>
+          <button class="branch-btn" data-branch="wake">Wake up to reality</button>
+        </div>
+
+  
+        <div class="branch-quote branch-quote-sleep">
+          <p class="branch-label">Keep sleeping</p>
+          <p class="quote">
+            “At first, his dreams were chaotic; somewhat later, they were of a
+            dialectical nature.” — Jorge Luis Borges, <em>The Circular Ruins</em>
+          </p>
+          <p class="quote-explain">
+            Early dreams are messy and tangled, like a worm that keeps squirming
+            without knowing what it will become.
+          </p>
+        </div>
+
+        <div class="branch-quote branch-quote-wake">
+          <p class="branch-label">Wake up to reality</p>
+          <p class="quote">
+            “Gradually, he accustomed the boy to reality.” — Jorge Luis Borges
+          </p>
+          <p class="quote-explain">
+            The body slowly practices the air of reality, getting ready to leave
+            the dream where it was first created.
+          </p>
+        </div>
+
+        
+        <button class="inner-dream-toggle" data-stage="2">
+          open inner dream
+        </button>
+      </div>
+    </section>
+
+
+    <section class="panel panel-olive stage-pre-butterfly" id="stage-pre-butterfly">
+      <header class="stage-hero">
+        <h2 class="stage-label">Stage 3 · Pre‑Butterfly</h2>
+        <p class="stage-intro">
+          A delicate new form appears, almost ready to fly.
+        </p>
+        <div class="stage-buttons">
+          <a href="#stage-worm" class="btn btn-secondary">Back</a>
+          <a href="#stage-butterfly" class="btn btn-secondary">Next stage</a>
+        </div>
+      </header>
+
+      <div class="stage-center">
+        <img src="images/bu2.png" alt="pre-butterfly" class="stage-img" />
+
+        <p class="stage-description">
+          The body has changed shape; only a thin layer separates it from the open air.
+        </p>
+
+        <button class="inner-dream-toggle" data-stage="3">
+          open inner dream
+        </button>
+      </div>
+    </section>
+
+    
+    <section class="panel panel-olive-dark stage-butterfly" id="stage-butterfly">
+      <header class="stage-hero">
+        <h2 class="stage-label">Stage 4 · Butterfly</h2>
+        <p class="stage-intro">
+          The dream body discovers that it may be a dream itself.
+        </p>
+        <div class="stage-buttons">
+          <a href="#stage-pre-butterfly" class="btn btn-secondary">Back</a>
+          <a href="#top" class="btn btn-secondary">Back to top</a>
+        </div>
+      </header>
+
+      <div class="stage-center">
+        <div class="butterfly-row">
+          <div class="butterfly-card">
+            <img src="images/bu.png" alt="butterfly" class="stage-img" />
+            <p class="caption">How do I look?</p>
+          </div>
+          <div class="butterfly-card">
+            <img src="images/bu.png" alt="butterfly" class="stage-img" />
+            <p class="caption">Wow!</p>
+          </div>
+          <div class="butterfly-card">
+            <img src="images/bu.png" alt="butterfly" class="stage-img" />
+            <p class="caption">How do I look?</p>
+          </div>
+        </div>
+
+        <p class="stage-description final-text">
+
+        <p class="quote final-quote">
+      
+
+        <button class="inner-dream-toggle" data-stage="4">
+          open inner dream
+        </button>
+      </div>
+    </section>
+  </main>
+
+ 
+  <div class="inner-dream-overlay" id="innerDream">
+    <div class="inner-dream-content">
+      <button class="inner-dream-close">×</button>
+      <h2>inner dream</h2>
+
+ 
+      <div id="innerDreamBody">
+  
+        <p class="quote">
+          “Almost immediately, he dreamt of a beating heart… active, warm,
+          secret, the size of a closed fist.” — Jorge Luis Borges,
+          <em>The Circular Ruins</em>
+        </p>
+        <p class="quote-explain">
+          Hidden inside, a heart the size of a closed fist is imagined first and
+          begins to grow.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

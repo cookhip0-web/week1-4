@@ -1,0 +1,326 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Pixelify Sans", system-ui, sans-serif;
+  background: #f6eec6;
+  color: #111;
+}
+
+
+.top-hero {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.main-nav a {
+  margin-left: 1.2rem;
+  text-decoration: none;
+  color: #111;
+  font-size: 0.8rem;
+}
+
+.hero-content {
+  pointer-events: auto;
+}
+
+.hero-content h1 {
+  margin: 0.3rem 0 0.2rem;
+  font-size: 1.6rem;
+}
+
+.hero-content p {
+  margin: 0 0 0.8rem;
+  font-size: 0.9rem;
+}
+
+.hero-buttons .btn {
+  margin-right: 0.5rem;
+}
+
+
+
+.btn {
+  border: 2px solid #000;
+  background: #ffe41f;
+  padding: 0.5rem 1.1rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.btn-secondary {
+  background: #f6eec7;
+}
+
+
+.panel {
+  position: relative;
+  min-height: 100vh;
+  padding: 6rem 3rem 3rem; 
+}
+
+.panel-yellow {
+  background: #ffe41f;
+}
+
+.panel-olive {
+  background: #b5b23a;
+}
+
+.panel-olive-dark {
+  background: #8e9617;
+}
+
+
+
+.stage-hero {
+  margin-bottom: 2rem;
+}
+
+.stage-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin: 0 0 0.5rem;
+}
+
+.stage-intro {
+  margin: 0 0 0.6rem;
+  max-width: 360px;
+  font-size: 0.9rem;
+}
+
+.stage-buttons .btn {
+  margin-right: 0.4rem;
+}
+
+
+
+.stage-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stage-img {
+  max-width: 260px;
+  display: block;
+  margin: 1.5rem auto 0.5rem;
+}
+
+.stage-description {
+  max-width: 360px;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+
+.word {
+  font-size: 1.4rem;
+}
+
+.word.grow {
+  font-size: 1rem;
+}
+
+.worm-visual {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
+
+.branch-buttons {
+  margin-top: 1.4rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.branch-btn {
+  border: 2px solid #000;
+  background: #fff4a0;
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.85rem;
+}
+
+.branch-quote {
+  margin-top: 1.4rem;
+  max-width: 260px;
+  background: #000;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.branch-quote.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.branch-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #ffe41f;
+  margin-bottom: 0.3rem;
+}
+
+.branch-quote .quote-explain {
+  color: #e8e8e8;
+  margin-top: 0.6rem;
+}
+
+
+
+.stage-center .inner-dream-toggle {
+  margin-top: 1.2rem;
+  border: 2px solid #000;
+  background: #f6eec7;
+  padding: 0.4rem 0.9rem;
+  font-family: inherit;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+
+
+.inner-dream-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+  z-index: 20;
+}
+
+.inner-dream-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.inner-dream-content {
+  background: #f6eec7;
+  color: #111;
+  max-width: 700px;
+  padding: 2rem 2.5rem;
+  border-radius: 18px;
+  border: 3px solid #000;
+  position: relative;
+  font-size: 0.9rem;
+}
+
+.inner-dream-close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.9rem;
+  border: none;
+  background: transparent;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.inner-dream-content .quote {
+  margin-top: 1rem;
+}
+
+.inner-dream-content .quote-explain {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: #444;
+}
+
+
+
+.butterfly-row {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.butterfly-card .caption {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.final-text {
+  max-width: 360px;
+  margin-top: 2.5rem;
+  font-size: 0.9rem;
+}
+
+.final-quote {
+  max-width: 380px;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+
+
+@media (max-width: 768px) {
+  .panel {
+    padding: 6rem 1.5rem 3rem;
+  }
+
+  .butterfly-row {
+    flex-direction: column;
+  }
+}
+.stage-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stage-center .inner-dream-toggle {
+  margin-top: 1.2rem;
+  border: 2px solid #000;
+  background: #f6eec7;
+  padding: 0.4rem 0.9rem;
+  font-family: inherit;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+

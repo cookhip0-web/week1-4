@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* 전체 기본을 픽셀 폰트로 */
+body {
+  margin: 0;
+  font-family: "Pixelify Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #ffe517; /* 밝은 노랑 */
+  color: #111;
+}
+
+/* 로고 / 네비도 픽셀 */
+.logo {
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* 큰 제목들 */
+.hero-content h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+/* 페이지 안의 'squirm', 'Growing' 같은 단어 */
+.word {
+  position: absolute;
+  font-weight: 700;
+  font-family: "Pixelify Sans", monospace;
+}
+
+/* 버튼도 살짝 더 각지게 */
+.btn {
+  border: 2px solid #111;
+  border-radius: 3px;
+  padding: 8px 14px;
+  font-size: 0.8rem;
+  font-family: "Pixelify Sans", sans-serif;
+  text-transform: uppercase;
+}
+v
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #ffe517; /* 밝은 노랑 */
+  color: #111;
+}
+/* 전체 기본을 픽셀 폰트로 */
+body {
+  margin: 0;
+  font-family: "Pixelify Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #111;
+}
+
+/* 로고 / 네비도 픽셀 */
+.logo {
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* 큰 제목들 */
+.hero-content h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+/* 페이지 안의 'squirm', 'Growing' 같은 단어 */
+.word {
+  position: absolute;
+  font-weight: 700;
+  font-family: "Pixelify Sans", monospace;
+}
+
+/* 버튼도 살짝 더 각지게 */
+.btn {
+  border: 2px solid #111;
+  border-radius: 3px;
+  padding: 8px 14px;
+  font-size: 0.8rem;
+  font-family: "Pixelify Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+
+.worm-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+}
+
+.worm-page h1 {
+  margin-bottom: 8px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.worm-page p {
+  margin-bottom: 32px;
+}
+
+.worm-move-wrapper {
+  width: 260px;
+  height: 140px;
+  position: relative;
+  overflow: visible;
+}
+
+/* 좌우로 살짝 움직이는 애니메이션 */
+.worm-moving {
+  max-width: 260px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: worm-wiggle 3s ease-in-out infinite;
+}
+
+@keyframes worm-wiggle {
+  0%   { transform: translate(-50%, -50%) translateX(-20px); }
+  50%  { transform: translate(-50%, -50%) translateX(20px); }
+  100% { transform: translate(-50%, -50%) translateX(-20px); }
+}
+
+.back-link {
+  margin-top: 40px;
+  text-decoration: none;
+  color: #111;
+  border-bottom: 1px solid #111;
+  font-size: 0.9rem;
+}
